@@ -62,3 +62,8 @@ O layout se encontra na pasta "layout" em PSD e PNG.
 - Grunt, Gulp ou similar
 
 ##### Dúvidas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
+
+### Contato:
+**Email:** rafaelferreirafontes@id.uff.br
+**Telefone:** (21) 99495-0572
+[Github](https://github.com/RafaelFerreiraFontes/) [Linkedin](https://www.linkedin.com/in/rafael-ferreira-fontes-a9a66b218/)

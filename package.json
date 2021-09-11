@@ -1,0 +1,27 @@
+{
+  "name": "desenvolvedor-m3",
+  "version": "1.0.0",
+  "description": "Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ e um escritório comercial na cidade de São Paulo.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelFerreiraFontes/Desenvolvedor-M3.git"
+  },
+  "author": "Rafael Ferreira Fontes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelFerreiraFontes/Desenvolvedor-M3/issues"
+  },
+  "homepage": "https://github.com/RafaelFerreiraFontes/Desenvolvedor-M3#readme"
+}
