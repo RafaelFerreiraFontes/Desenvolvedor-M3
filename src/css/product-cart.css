@@ -1,0 +1,73 @@
+.product-cart-container
+{
+    display: flex;
+
+    align-items: center;
+    
+    flex-direction: column;
+
+    margin: 1.25rem;
+}
+
+
+.product-cart-title
+{
+    padding-top: 0.2rem;
+
+    font-size: 18px;
+
+    font-family: system-ui;
+
+    font-weight: 480;
+}
+
+.product-cart-price
+{
+    padding: 0.7rem 0;
+
+    font-size: 18px;
+
+    font-family: system-ui;
+
+    font-weight: 800;
+}
+
+.product-cart-portion
+{
+    padding-bottom: 0.3rem;
+    font-size: 14px;
+
+    font-family: system-ui;
+
+    font-weight: 480;
+}
+
+.product-cart-buy-button
+{
+    width: 12rem;
+
+    color: #fff;
+
+    font-family: system-ui;
+
+    font-weight: 580;
+
+    height: 3.5rem;
+
+    background-color: #000;
+
+    border: none;
+
+    transition: 0.25s ease-in-out;
+}
+
+.product-cart-buy-button:active
+{
+    color: #fffc;
+
+    background-color: #000c;
+
+    border: none;
+
+    transition-duration: 0.25s ease-in-out;;
+}

@@ -1,0 +1,213 @@
+.product-filters-colors, .product-filters-range-price
+{
+  display: flex;
+
+  align-items: flex-start;
+
+  flex-direction: column;
+
+  margin: 0.5rem 0;
+}
+
+.checkfilter-color-container, .checkfilter-range-price-container
+{
+	display: flex;
+
+	align-items: center;
+
+	justify-content: flex-start;
+}
+
+
+.checkfilter-color[type="checkbox"], .checkfilter-range-price[type="checkbox"]
+{	
+	transform: scale(1.75);
+
+	display: flex;
+    
+  align-items: center;
+    
+  justify-content: center;
+
+	margin: 0.3rem;
+
+	cursor: pointer; 
+
+  -moz-appearance:none;
+  
+  -webkit-appearance:none;
+  
+  -o-appearance:none;
+
+  outline: none;
+   
+  content: none;
+}
+
+.checkfilter-color[type="checkbox"]:before , .checkfilter-range-price[type="checkbox"]:before
+{
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  align-content: center;
+
+  width: 0.55rem;
+
+  height: 0.55rem;
+
+  border: 1px solid #0007;
+
+  content: "";
+
+  background: #fff;
+}
+
+.checkfilter-color[type="checkbox"]:after , .checkfilter-range-price[type="checkbox"]:after
+{
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  align-content: center;
+
+  width: .45rem;
+
+  height: .45rem;
+
+  content: "";
+
+  background-color: #fff;
+}
+
+.checkfilter-color[type="checkbox"]:checked:after , .checkfilter-range-price[type="checkbox"]:checked:after
+{
+  background-color: #4ee0fa;
+}
+
+.checkfilter-color[type="checkbox"]:disabled:after , .checkfilter-range-price[type="checkbox"]:disabled:after
+{
+  background-color: #fff;
+}
+
+.checkfilter-color-container span , .checkfilter-range-price-container span
+{	
+	font-size: 20px;
+
+	margin: .4rem .8rem;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  
+  -webkit-user-select: none; /* Safari */
+  
+  -khtml-user-select: none; /* Konqueror HTML */
+  
+  -moz-user-select: none; /* Old versions of Firefox */
+  
+  -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none;
+}
+
+
+.product-filters-sizes
+{
+  display: grid;
+
+  grid-template-columns: auto auto auto auto;
+
+  margin: 1rem 0 1rem -0.25rem;
+}
+
+.checkfilter-size-container
+{
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.checkfilter-size
+{ 
+  display: flex;
+    
+  align-items: center;
+    
+  justify-content: center;
+
+  width: 3rem;
+  
+  height: 3rem;
+
+  margin: 0.25rem;
+
+  cursor: pointer; 
+
+  -moz-appearance:none;
+  
+  -webkit-appearance:none;
+  
+  -o-appearance:none;
+  
+  outline: none;
+  
+  content: none;  
+}
+
+.checkfilter-size[type="checkbox"]:before 
+{
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  align-content: center;
+
+  width: 2.75rem;
+
+  height: 2.75rem;
+
+  border: 1px solid #0003;
+
+  content: "";
+
+  background: #fff;
+}
+
+.checkfilter-size[type="checkbox"]:checked:before 
+{
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  align-content: center;
+
+  border: 2px solid #4ee0fa;
+
+  content: "";
+
+  background: #fff;
+}
+
+.checkfilter-size-container span
+{ 
+  position: absolute;
+
+  font-size: 20px;
+
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.checkfilter-size-container .checkfilter-size[type="checkbox"]:checked ~ span
+{
+  opacity: 1;
+}

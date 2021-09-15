@@ -11,16 +11,449 @@
 </head>
 
 <body>
-    <main>
+    <header>
         
         <div class="navbar-container">
 
             <nav class="navbar">
-                <img src="./assets/images/logo-m3.png" alt="logo-m3">
+                <img id="logo-m3"src="./assets/images/logo-m3.png" alt="logo-m3">
 
-                <img src="assets/icons/bag.svg" alt="wishlist">
+                <div class="wishlist-container">
+
+                    <img class="wishlist-icon" src="assets/icons/bag.svg" alt="wishlist">
+                    
+                    <div class="wishlist-counter">
+                        <span class="wishlist-counter-text">
+                            1
+                        </span>
+                    </div>
+
+                </div>
+
             </nav>
         
+        </div>
+
+    </header>
+
+    <main>
+        
+        <div class="product-section-header">
+
+            <span class="product-category">
+                Blusas
+            </span>
+
+
+            <div class="order-dropdown-menu">
+
+                <button class="dropbtn" id="dropbth" onclick="order_menu_onclick()">Ordernar por: <img src="assets/icons/expand_more_black_24dp.svg" alt="expand more black"></button>
+                
+                <div id="order-menu-content" class="order-dropdown-content">
+                    <a  onclick="order_menu_select_option(this)" href="#">Mais recente</a>
+                    <a  onclick="order_menu_select_option(this)" href="#">Menor preço</a>
+                    <a  onclick="order_menu_select_option(this)" href="#">Maior preço</a> 
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="product-section-body">
+
+            <div class="filters-group">
+                
+            <span class="product-filter-category">
+                CORES
+            </span>
+
+            <div class="product-filters-colors">
+                
+                <div class="checkfilter-color-container">
+
+                    <input type="checkbox" class="checkfilter-color" name="check-yellow" onclick="checkbox_color('yellow')">
+
+                    <span>Amarelo</span>
+                </div>
+                
+                <div class="checkfilter-color-container"> 
+                    
+                    <input type="checkbox" class="checkfilter-color" name="check-blue" onclick="checkbox_color('blue')">
+
+                    <span>Azul</span>
+                </div>
+
+                <div class="checkfilter-color-container"> 
+                    
+                    <input type="checkbox" class="checkfilter-color" name="check-white" onclick="checkbox_color('white')">
+
+                    <span>Branco</span>
+                </div>
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-gray" onclick="checkbox_color('gray')">
+
+                    <span>Cinza</span>
+                </div>
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-orange" onclick="checkbox_color('orange')">
+
+                    <span>Laranja</span>
+                </div>
+
+                <div class="checkfilter-color-container"> 
+                    
+                    <input type="checkbox" class="checkfilter-color" name="check-green" onclick="checkbox_color('green')">
+    
+                    <span>Verde</span>
+                </div>
+
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-red" onclick="checkbox_color('red')">
+                        
+                    <span>Vermelho</span>
+                </div>
+
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-black" onclick="checkbox_color('black')">
+
+                    <span>Preto</span>
+                </div>
+
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-pink" onclick="checkbox_color('pink')">
+    
+                    <span>Rosa</span>
+                </div>
+
+
+                <div class="checkfilter-color-container"> 
+
+                    <input type="checkbox" class="checkfilter-color" name="check-wine" onclick="checkbox_color('wine')">
+                    
+                    <span>Vinho</span>
+                </div>
+
+            </div>
+
+            <span class="product-filter-category">
+                TAMANHOS                
+            </span>
+
+            <div class="product-filters-sizes">
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-P" onclick="checkbox_size('P')">
+                    
+                    <span  onclick="checkbox_size_span('P')"> P </span>
+                </div>
+
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-M" onclick="checkbox_size('M')">
+                    
+                    <span onclick="checkbox_size_span('M')"> M </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-G" onclick="checkbox_size('G')">
+                    
+                    <span onclick="checkbox_size_span('G')"> G </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-GG" onclick="checkbox_size('GG')">
+                    
+                    <span onclick="checkbox_size_span('GG')"> GG </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-U" onclick="checkbox_size('U')">
+                    
+                    <span onclick="checkbox_size_span('U')"> U </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-36" onclick="checkbox_size('36')">
+                    
+                    <span onclick="checkbox_size_span('36')"> 36 </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-38" onclick="checkbox_size('38')">
+                    
+                    <span onclick="checkbox_size_span('38')"> 38 </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-40" onclick="checkbox_size('40')">
+                    
+                    <span onclick="checkbox_size_span('40')"> 40 </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-42" onclick="checkbox_size('42')">
+                    
+                    <span onclick="checkbox_size_span('42')"> 42 </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-44" onclick="checkbox_size('44')">
+                    
+                    <span onclick="checkbox_size_span('44')"> 44 </span>
+                </div>
+
+                <div class="checkfilter-size-container">
+
+                    <input type="checkbox" class="checkfilter-size" name="check-46" onclick="checkbox_size('46')">
+                    
+                    <span onclick="checkbox_size_span('46')"> 46 </span>
+                </div>
+            </div>
+
+            <span class="product-filter-category">
+                FAIXA DE PREÇO              
+            </span>
+
+            <div class="product-filters-range-price">
+
+                <div class="checkfilter-range-price-container">
+
+                    <input type="checkbox" class="checkfilter-range-price" name="check-range1" onclick="checkbox_range('range1')">
+
+                    <span>de R$ 0 até R$ 50</span>
+                </div>
+
+                <div class="checkfilter-range-price-container">
+
+                    <input type="checkbox" class="checkfilter-range-price" name="check-range2" onclick="checkbox_range('range2')">
+
+                    <span>de R$ 51 até R$ 150</span>
+                </div>
+
+                <div class="checkfilter-range-price-container">
+
+                    <input type="checkbox" class="checkfilter-range-price" name="check-range3" onclick="checkbox_range('range3')">
+
+                    <span>de R$ 151 até R$ 300</span>
+                </div>
+
+                <div class="checkfilter-range-price-container">
+
+                    <input type="checkbox" class="checkfilter-range-price" name="check-range4" onclick="checkbox_range('range4')">
+
+                    <span>de R$ 301 até R$ 500</span>
+                </div>
+
+                <div class="checkfilter-range-price-container">
+
+                    <input type="checkbox" class="checkfilter-range-price" name="check-range0" onclick="checkbox_range('range0')">
+
+                    <span>a partir de R$ 501</span>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="product-group">
+                
+                <div class="product-grid">
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img class="product-cart-image" src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img class="product-cart-image" src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img class="product-cart-image" src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                    <div class="product-cart-container">    
+
+                        <img class="product-cart-image" src="./assets/images/img_2.png">
+
+                        <span class="product-cart-title">CAMISETA MESCLA</span>
+
+                        <span class="product-cart-price">R$ 28,00</span>
+
+                        <span class="product-cart-portion">até 3x de R$9.33</span>
+
+                        <button class="product-cart-buy-button">COMPRAR</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </main>
