@@ -1,0 +1,65 @@
+[
+	{
+		"id": 0,
+		"image":  "./images/img_2.png",
+		"title": "CAMISETA MESCLA",
+		"price": 28.00,
+		"portion": 3 
+	},
+	{
+		"id": 1,
+		"image":  "./images/img_3.png",
+		"title": "SAIA EM COURO",
+		"price": 398.00,
+		"portion": 5 
+	},
+	{
+		"id": 2,
+		"image":  "./images/img_4.png",
+		"title": "CARDIGAN TIGRE",
+		"price": 398.00,
+		"portion": 5 
+	},
+	{
+		"id": 3,
+		"image":  "./images/img_5.png",
+		"title": "CARDIGAN OFF WHITE",
+		"price": 99.90,
+		"portion": 3 
+	},
+	{
+		"id": 4,
+		"image":  "./images/img_6.png",
+		"title": "BODY LEOPARDO",
+		"price": 129.90,
+		"portion": 3 
+	},
+	{
+		"id": 5,
+		"image":  "./images/img_7.png",
+		"title": "CASACO PELOS",
+		"price": 398.00,
+		"portion": 5 
+	},
+	{
+		"id": 6,
+		"image":  "./images/img_8.png",
+		"title": "CROPPED STRIPES",
+		"price": 120.00,
+		"portion": 3 
+	},
+	{
+		"id": 7,
+		"image":  "./images/img_9.png",
+		"title": "CAMISA TRANSPARENTE",
+		"price": 398.00,
+		"portion": 5 
+	},
+	{
+		"id": 8,
+		"image":  "./images/img_10.png",
+		"title": "POCHETE CLUTCH",
+		"price": 99.00,
+		"portion": 3 
+	},
+]
