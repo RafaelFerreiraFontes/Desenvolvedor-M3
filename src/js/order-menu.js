@@ -1,3 +1,4 @@
+
 function order_menu_onclick() 
 {
 	let elem = document.getElementById("order-menu-content");

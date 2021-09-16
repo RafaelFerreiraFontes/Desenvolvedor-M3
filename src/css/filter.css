@@ -21,8 +21,6 @@
 
 .checkfilter-color[type="checkbox"], .checkfilter-range-price[type="checkbox"]
 {	
-	transform: scale(1.75);
-
 	display: flex;
     
   align-items: center;
@@ -54,9 +52,9 @@
 
   align-content: center;
 
-  width: 0.55rem;
+  width: 1rem;
 
-  height: 0.55rem;
+  height: 1rem;
 
   border: 1px solid #0007;
 
@@ -75,9 +73,9 @@
 
   align-content: center;
 
-  width: .45rem;
+  width: .75rem;
 
-  height: .45rem;
+  height: .75rem;
 
   content: "";
 
