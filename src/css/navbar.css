@@ -80,3 +80,21 @@
 
     font-weight: bold;
 }
+
+@media screen and (max-width: 980px) 
+{
+
+    .wishlist-container
+    {
+        position: relative;
+
+        left: 15rem;
+    }
+
+    #logo-m3
+    {
+        position: relative;
+        
+        right: 15rem;
+    } 
+}

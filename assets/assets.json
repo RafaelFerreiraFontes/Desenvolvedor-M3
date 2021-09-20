@@ -1,65 +1,94 @@
-[
+{
+	"clothing": [
 	{
 		"id": 0,
-		"image":  "./images/img_2.png",
+		"image":  "./assets/images/img_2.png",
 		"title": "CAMISETA MESCLA",
+		"color" : ["gray"],
+		"size": "P",
 		"price": 28.00,
-		"portion": 3 
+		"portion": 5,
+		"date": "02/08/2021" 
 	},
 	{
 		"id": 1,
-		"image":  "./images/img_3.png",
+		"image":  "./assets/images/img_3.png",
 		"title": "SAIA EM COURO",
+		"color": ["yellow"],
+		"size": "M",
 		"price": 398.00,
-		"portion": 5 
+		"portion": 5,
+		"date": "05/08/2021" 
 	},
 	{
 		"id": 2,
-		"image":  "./images/img_4.png",
+		"image":  "./assets/images/img_4.png",
 		"title": "CARDIGAN TIGRE",
+		"color": ["wine"],
+		"size": "G",
 		"price": 398.00,
-		"portion": 5 
+		"portion": 5,
+		"date": "02/08/2021" 
 	},
 	{
 		"id": 3,
-		"image":  "./images/img_5.png",
+		"image":  "./assets/images/img_5.png",
 		"title": "CARDIGAN OFF WHITE",
+		"color": ["white"],
+		"size": "GG",
 		"price": 99.90,
-		"portion": 3 
+		"portion": 3,
+		"date": "02/08/2021" 
 	},
 	{
 		"id": 4,
-		"image":  "./images/img_6.png",
+		"image":  "./assets/images/img_6.png",
 		"title": "BODY LEOPARDO",
+		"color": ["orange"],
+		"size": "U",
 		"price": 129.90,
-		"portion": 3 
+		"portion": 3,
+		"date": "05/09/2021" 
 	},
 	{
 		"id": 5,
-		"image":  "./images/img_7.png",
+		"image":  "./assets/images/img_7.png",
 		"title": "CASACO PELOS",
+		"color": ["pink"],
+		"size": "36",
 		"price": 398.00,
-		"portion": 5 
+		"portion": 5,
+		"date": "18/08/2021" 
 	},
 	{
 		"id": 6,
-		"image":  "./images/img_8.png",
+		"image":  "./assets/images/img_8.png",
 		"title": "CROPPED STRIPES",
+		"color": ["green","orange","blue","yellow"],
+		"size": "38",
 		"price": 120.00,
-		"portion": 3 
+		"portion": 3,
+		"date": "12/08/2021" 
 	},
 	{
 		"id": 7,
-		"image":  "./images/img_9.png",
+		"image":  "./assets/images/img_9.png",
 		"title": "CAMISA TRANSPARENTE",
+		"color": ["black"],
+		"size": "40",
 		"price": 398.00,
-		"portion": 5 
+		"portion": 5,
+		"date": "12/09/2021" 
 	},
 	{
 		"id": 8,
-		"image":  "./images/img_10.png",
+		"image":  "./assets/images/img_10.png",
 		"title": "POCHETE CLUTCH",
+		"color": ["black"],
+		"size": "42",
 		"price": 99.00,
-		"portion": 3 
-	},
+		"portion": 3,
+		"date": "13/09/2021" 
+	}
 ]
+}

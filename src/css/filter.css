@@ -98,18 +98,32 @@
 
 	margin: .4rem .8rem;
 
-  -webkit-touch-callout: none; /* iOS Safari */
-  
-  -webkit-user-select: none; /* Safari */
-  
-  -khtml-user-select: none; /* Konqueror HTML */
-  
-  -moz-user-select: none; /* Old versions of Firefox */
-  
-  -ms-user-select: none; /* Internet Explorer/Edge */
-   user-select: none;
 }
 
+#filter_color_hidden
+{
+  display: none;
+}
+
+#filter_color_text_show, #filter_color_text_hidden
+{
+  margin-top: 0.2rem;
+
+  display: flex;
+  
+  align-items: center;
+  
+  opacity: 0.7;
+  
+  border-bottom: 1px solid #0006;
+
+  cursor: pointer;
+}
+
+#filter_color_text_hidden
+{
+  display: none;
+}
 
 .product-filters-sizes
 {
@@ -203,6 +217,8 @@
   opacity: 0.5;
 
   cursor: pointer;
+
+  user-select: none;     
 }
 
 .checkfilter-size-container .checkfilter-size[type="checkbox"]:checked ~ span

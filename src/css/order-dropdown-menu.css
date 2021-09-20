@@ -48,7 +48,7 @@
   border-top: none;
 }
 
-.order-dropdown-content a 
+.order-dropdown-content span 
 {
   color: black;
 
@@ -59,7 +59,7 @@
   display: block;
 }
 
-.order-dropdown-content a:hover 
+.order-dropdown-content span:hover 
 {
   background-color: #4ee0fa;
 
@@ -71,4 +71,13 @@
 .order-dropdown-active
 {
   display: block;
+}
+
+@media screen and (max-width: 980px) 
+{
+
+  .order-dropdown-menu
+  {
+      display: none;
+  }
 }
